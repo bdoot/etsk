@@ -1,0 +1,2 @@
+Just a sintra example
+
