@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title hello world
+  %body
+    %p #{create_link(@label) if @label}
+    %form{ :action => "", :method => "post"}
+      %fieldset
+        %ol
+          %li
+            %label{:for => "label"} label:
+            %input{:type => "text", :name => "label", :class => "text"}
+          %li
+            %label{:for => "url"} url:
+            %input{:type => "text", :name => "url", :class => "text"}
+        %input{:type => "submit", :value => "Send", :class => "button"}
+
